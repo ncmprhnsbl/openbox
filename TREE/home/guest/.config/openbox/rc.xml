@@ -800,11 +800,6 @@
           <menu>openbox</menu>
         </action>
       </mousebind>
-      <mousebind button="A-Left" action="Press">
-        <action name="ShowMenu">
-          <menu>menu3</menu>
-        </action>
-      </mousebind>
     </context>
     <context name="MoveResize">
       <mousebind button="Up" action="Click">
