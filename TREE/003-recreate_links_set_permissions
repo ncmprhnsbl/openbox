@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# link porteus srcipts in /usr/bin
+for x in `find opt/porteus-scripts/ -maxdepth 1 -type f -executable`; do
+    name=`echo $x | rev | cut -d/ -f1 | rev`
+    ln -sf /opt/porteus-scripts/$name usr/bin/$name
+done
+
+# Set correct permissions
+chown -R 1000:1000 home/guest
+chown -R root:root root opt usr/share/applications
+
+# Recompress svgz icons:
+for x in `find -name "*.svgz"`; do zcat $x > /tmp/.file 2>/dev/null && mv /tmp/.file $x; done
