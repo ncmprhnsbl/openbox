@@ -14,7 +14,7 @@
         <menu id="audcon" label="Music Player" execute="~/.config/openbox/pipemenus/audcontrol.sh" />
         <menu id="bookmarks" label="Bookmarks" execute="~/.config/openbox/pipemenus/bookmarks.sh" />
 	<menu id="root-menu" label="OpenBox 3">
-                <separator label="Porteus 2.1" />
+                <separator label="Porteus 3.1" />
                 <separator />
                 <separator />
                 <item label="File Manager"> <action name="Execute">
