@@ -1,0 +1,6 @@
+[Added Associations]
+image/jpeg=gpicview.desktop;userapp- feh  --bg-scale --no-fehbg-J5UYYW.desktop;userapp-feh  --bg-scale-35J5YW.desktop;
+image/png=gpicview.desktop;userapp-feh  --bg-scale --no-fehbg-04G4YW.desktop;userapp-feh  --bg-scale-QT37YW.desktop;
+
+[Default Applications]
+image/jpeg=gpicview.desktop

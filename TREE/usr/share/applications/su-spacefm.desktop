@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=gnsu spacefm /root
+Icon=system-file-manager
+Name=Super User Mode - Spacefm
+Type=Application
+Categories=Application;System;
+NotShowIn=KDE;

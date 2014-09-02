@@ -8,6 +8,10 @@
 #sed -i -r s^Icon=.*$^Icon=utilities-terminal^g usr/share/applications/uxterm.desktop
 #sed -i -r s^Icon=.*$^Icon=go-down^g usr/share/applications/gftp.desktop
 
+# Apply porteus patches:
+for x in `find xfce-patches -type f`; do patch -p1 < $x; done
+rm -rf xfce-patches
+
 #remove version of libssp, libgmp, libquadmath and libltdl that doesn't belong based on arch
 #NOTE - libgmp and libssp are now in core or xorg, so have been dropped from 003 tree
 # not sure about libltdl

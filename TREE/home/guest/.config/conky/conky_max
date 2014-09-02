@@ -33,7 +33,7 @@ color2 999999
 #  Output
 ##############################################
 TEXT
-${color1}${font sans-serif:bold:size=12}${time %l:%M:%S} ${font sans:normal:size=8}${time %p}${image ~/.config/conky/porteus-logo-small-g.png -p 5,60 -s 32x32}${alignr}${font sans-serif:normal:size=8}${color2}desk ${font sans-serif:bold:size=12}${color1}$desktop
+${color1}${font sans-serif:bold:size=12}${time %l:%M:%S} ${font sans:normal:size=8}${time %p}${image ~/.config/conky/porteus-logo-small-g.png -p 5,60 -s 32x32}${alignr}${font sans-serif:normal:size=8}${color2}desk ${font sans-serif:bold:size=12}${color1}$desktop 
 ${font sans-serif:normal:size=8}${alignr}${time %a}, ${time %e %B}
 ${color2}${font sans-serif:bold:size=8}SYSTEM ${color}${hr 2}
 
@@ -65,15 +65,14 @@ ${font sans-serif:bold:size=8}${color}Down: ${color }${alignr}${font sans-serif:
 ${alignr}${downspeedgraph eth0 15,160 222222 581516}
 ${font sans-serif:bold:size=8}Total: ${font sans-serif:normal:size=8}${alignr}Upload:${color 999999} ${totalup eth0}
 ${color}${alignr}Download: ${color 999999}${font sans-serif:normal:size=8}${totaldown eth0}
+    
 
-${color2}${font sans-serif:bold:size=8}MUSIC ${color}${hr 2}
-
-${alignr}${color2}${font sans-serif:normal:size=8}${audacious_title 40}
-${alignc}${color}${audacious_bar 5,150}
-${alignc}$audacious_status$audacious_position / $audacious_length 
-${alignc}Frequency---$audacious_frequency
-${alignc}Bitrate-----$audacious_bitrate
-${alignc}Level-------${audacious_main_volume}%     
-${color}${hr 1}
+${font sans-serif:bold:size=8}${color2}SHORTCUT KEYS ${hr 2} ${color}{font sans-serif:normal:size=8}
+Super+t$alignr Terminal
+Super+f$alignr File Manager
+Super+e$alignr Text Editor
+Super+w$alignr Web Browser
+Super+m$alignr Music Player
 #Lxde with tint2 conky & rightclick menu 
+${color}${hr 1}
 conky${alignr}$conky_version

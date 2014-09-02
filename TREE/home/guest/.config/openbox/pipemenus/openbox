@@ -25,7 +25,7 @@ cat <<EOFMENU
 <startupnotify><enabled>yes</enabled></startupnotify>
 </action></item>
 <item label="Edit Menu"> <action name="Execute">              
-<execute>leafpad ~/.config/openbox/menu.xml</execute>
+<execute>leafpad ~/.config/openbox/pipemenus/menu4</execute>
 <startupnotify><enabled>yes</enabled></startupnotify>
 </action></item>
 <item label="Edit Keybinds etc"> <action name="Execute">              

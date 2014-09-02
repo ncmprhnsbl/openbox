@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Mplayer
+Exec=mplayer %f
+MimeType=video/mp4
+Icon=exec
+NoDisplay=true

@@ -1,7 +1,7 @@
-(sleep 3 && /usr/bin/nm-applet --sm-disable) &
+#(sleep 3 && /usr/bin/nm-applet --sm-disable) &#
 sh ~/.fehbg &
 tint2 &
-conky -q &
+#conky -q &#
 volumeicon &
 compton --config ~/.config/compton/compton.conf &
 

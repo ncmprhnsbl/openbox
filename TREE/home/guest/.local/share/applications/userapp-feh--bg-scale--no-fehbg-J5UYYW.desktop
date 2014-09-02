@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Set as Wallpaper(temporary)
+Exec= feh  --bg-scale --no-fehbg %f
+NoDisplay=true

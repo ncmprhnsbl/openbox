@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# rc.4		This file is executed by init(8) when the system is being
+#		initialized for run level 4.
+
+# Unload proprietary driver in case of Xorg fail.
+# If proprietary driver is not present and Xorg still fails then use "safe" vesa/modesetting config.
+if ls /mnt/live/memory/images | egrep -q 'nVidia-|amd-catalyst-'; then
+    pidof watch-proprietary >/dev/null && sleep 4 || /opt/porteus-scripts/xorg/watch-proprietary &
+else
+    pidof watch-xorg >/dev/null && sleep 4 || /opt/porteus-scripts/xorg/watch-xorg &
+fi
+
+# Start LXDE desktop:
+login=`egrep -o " login=[^ ]+*" /proc/cmdline | cut -dn -f2`
+[ "$login"  ] && sed -i -r s/^.*autologin=.*$/autologin$login/g /etc/lxdm/lxdm.conf || sed -i -r s/^.*autologin=.*$/autologin=guest/g /etc/lxdm/lxdm.conf
+exec /usr/sbin/lxdm

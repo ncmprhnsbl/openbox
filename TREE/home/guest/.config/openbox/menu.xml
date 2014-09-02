@@ -4,7 +4,7 @@
         <menu id="obrecent.sh" label="Recent Files.." execute="/opt/porteus-scripts/lxde/pipemenus/obrecent.sh" />
         <menu id="date-menu" label="Calendar" execute="~/.config/openbox/pipemenus/date-menu.sh" />
         <menu id="pipe-wall" label="Wallpapers" execute="~/.config/openbox/pipemenus/obpipemenu-wallpaper" />
-        <menu id="desktop-app-menu" label="Applications" execute="openbox-menu lxde-applications.menu" />
+        <menu id="desktop-app-menu" label="Applications" execute="openbox-menu -i lxde-applications.menu" />
         <menu id="menu3" label="Apps" execute="~/.config/openbox/pipemenus/menu3" />
         <menu id="menu4" label="Apps" execute="~/.config/openbox/pipemenus/menu4" />
         <menu id="candypipe" label="Eye Candy" execute="~/.config/openbox/pipemenus/candypipe" />

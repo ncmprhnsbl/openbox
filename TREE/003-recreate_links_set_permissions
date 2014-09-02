@@ -8,7 +8,7 @@ done
 
 # Set correct permissions
 chown -R 1000:1000 home/guest
-chown -R root:root root opt usr/share/applications
+chown -R root:root root opt usr/share/applications etc
 
 # Recompress svgz icons:
 for x in `find -name "*.svgz"`; do zcat $x > /tmp/.file 2>/dev/null && mv /tmp/.file $x; done
