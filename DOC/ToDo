@@ -2,7 +2,7 @@
 update/correct docs
 identify/supply missing packages
 check configs match
-make it work
+make it work  !currently working 64 module built(no nm-applet)!
 include 32bit
 update/correct docs
 rebuild from/include sources

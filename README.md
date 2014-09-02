@@ -5,7 +5,7 @@ See here: https://github.com/brokenman/xfce.git for the real thing
 
 A collection of configs for openbox wm, and associated apps,
  set up to build a lightweight desktop in Porteus module format.
-NOT in  useable state. 
+Now in  useable state. see /DOC/intructions. and ToDo
 
 This module is intended for use only with the Porteus Linux operating system.
 
