@@ -36,4 +36,5 @@ TEXT
 ${downspeedgraph eth0 8,30 444444 581516}  ${font sans-serif:normal:size=8}${totaldown eth0} \
 ${offset 13}${time %a %e} ${time %B} ${font sans:bold:size=12}${time %l:%M}${font sans-serif:normal:size=8}${time %p} \
 ${offset 9}${voffset -3}${cpugraph 8,30 444444 004D00}${offset 9}${cpu cpu0} %${offset 9}${freq_g}ghz ${acpitemp}c \
-${offset 9}${mem} 
+${offset 9}${mem} \
+${offset 19}${if_running audacious}${execi 10 audtool current-song}${endif}

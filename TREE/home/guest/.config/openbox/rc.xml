@@ -340,6 +340,12 @@
     <keybind key="W-h">
       <action name="ToggleMaximizeHorz"/>
     </keybind>
+    <keybind key="W-v">
+      <action name="MaximizeVert"/>
+    </keybind>
+    <keybind key="A-v">
+      <action name="UnmaximizeVert"/>
+    </keybind>
     <keybind key="A-W-Up">
       <action name="GrowToEdgeNorth"/>
     </keybind>
@@ -456,7 +462,7 @@
     <!-- Launch Task Manager with Ctrl+Alt+Del -->
     <keybind key="A-C-Delete">
       <action name="Execute">
-        <command>lxtask</command>
+        <command>lxterminal -e top</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">

@@ -50,6 +50,9 @@ cat <<EOFMENU
                           <item label="Start Compton"> <action name="Execute">
                           <execute>compton --config ~/.config/compton/compton.conf</execute>
                           </action></item>
+                          <item label="Edit compton.conf"> <action name="Execute">
+                          <execute>leafpad ~/.config/compton/compton.conf</execute>
+                          </action></item>
                           <item label="Select &amp; Set Window Opacity 70%"> <action name="Execute">
                           <execute>compton-trans -s -o 70</execute>
                           </action></item>
