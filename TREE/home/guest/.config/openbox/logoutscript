@@ -38,8 +38,11 @@
     }; export -f gtklogout_logout
      
     export GTKLOGOUT='
-    <window window_position="1" decorated="false" skip_taskbar_hint="true" window_position="1" allow-shrink="true" width-request="225" height-request="285">
+    <window window_position="1" decorated="false" skip_taskbar_hint="true" window_position="1" allow-shrink="true" width-request="220" height-request="425">
       <vbox margin="30">
+        <hbox>
+          <pixmap><height>128</height><width>128</width><input file icon="system-log-out"></input></pixmap>
+        </hbox>
         <hbox>
           <pixmap><height>32</height><width>32</width><input file icon="lock"></input></pixmap>
           '`txtcolor 100 darkred x-large normal "  Log out"`'
@@ -47,7 +50,7 @@
           '`hsep`'
        
         <hbox>
-            <button tooltip-text="Shut Down your system" width-request="120">
+            <button tooltip-text="Shut Down your system" width-request="140">
            <variable>HALT</variable>
           <label>Shut Down</label>
          <input file icon="xfsm-shutdown"></input>
@@ -56,7 +59,7 @@
         </hbox>
        
         <hbox>
-            <button tooltip-text="Restart your system" width-request="120">
+            <button tooltip-text="Restart your system" width-request="140">
            <variable>REBOOT</variable>
           <label>Reboot</label>
          <input file icon="xfsm-reboot"></input>
@@ -65,7 +68,7 @@
         </hbox>
        
         <hbox>
-            <button tooltip-text="Put your system into a low power state" width-request="120">
+            <button tooltip-text="Put your system into a low power state" width-request="140">
            <variable>SUSPEND</variable>
           <label>Suspend</label>
          <input file icon="xfsm-suspend"></input>
@@ -74,7 +77,7 @@
         </hbox>
        
         <hbox>
-            <button tooltip-text="Log out of openbox" width-request="120">
+            <button tooltip-text="Log out of openbox" width-request="140">
            <variable>LOGOUT</variable>
           <label>Log out</label>
          <input file icon="xfsm-logout"></input>
@@ -83,7 +86,7 @@
         </hbox>
        
         <hbox>
-            <button tooltip-text="Cancel" width-request="120">
+            <button tooltip-text="Cancel" width-request="140">
            <variable>CANCEL</variable>
           <label>Cancel</label>
          <input file icon="gtk-cancel"></input>
