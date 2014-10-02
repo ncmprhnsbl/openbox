@@ -3,5 +3,5 @@ sh ~/.fehbg &
 tint2 &
 conky -q &
 volumeicon &
-compton --config ~/.config/compton/compton.conf &
+#compton --config ~/.config/compton/compton.conf &
 
