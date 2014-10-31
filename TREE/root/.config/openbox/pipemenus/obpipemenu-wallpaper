@@ -16,7 +16,6 @@ done
 
 echo "<openbox_pipe_menu>"
 # Simply change paths to suit
-feh_pipe /home/guest/.wallpaper
 feh_pipe /usr/share/wallpapers
 feh_pipe /usr/share/backgrounds
 echo "</openbox_pipe_menu>"

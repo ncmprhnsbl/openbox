@@ -1,5 +1,4 @@
 #!/bin/bash
-# Openbox Pipe Menu for cmus, adapted 2014 from
 # author:Matsuda Shinpei
 # Date:March 2011
 #
@@ -9,13 +8,13 @@
 # as far as these media players support the CUI control commands.
 # see 'audtool help' for more 
  
-if [ ! "$(ps -C cmus -o pid=)" ]; then
+if [ ! "$(ps -C audacious -o pid=)" ]; then
     cat <<EOF
 <openbox_pipe_menu>
-  <item label="Run cmus">
+  <item label="Run audacious">
     <action name="Execute">
       <execute>
-        lxterminal -e cmus 
+        audacious 
       </execute>
     </action>
   </item>
